@@ -53,9 +53,12 @@ function createTaskElement(task) {
         confirmEdit.onclick = () => {
             task.name = editInput.value;
             btag.innerText = editInput.value;
+
+            task.isMarked = false;
+            btag.classList.remove("done");
             updateLocalStorage();
             editDialog.close();
-        };
+        }
 
         cancelEdit.onclick = () => {
             editDialog.close();
