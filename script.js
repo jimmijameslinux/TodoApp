@@ -66,6 +66,11 @@ function createTaskElement(task) {
         cancelEdit.onclick = () => {
             editDialog.close();
         };
+        editDialog.onclick = (e) => {
+            if (e.target === editDialog) {
+                editDialog.close();
+            }
+        };
     });
 
     return litag;
