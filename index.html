@@ -8,23 +8,21 @@
     <title>Todo App</title>
 </head>
 <body>
-    <h1>TODO APP</h1>
+    <h1 title="Todo App">TODO APP</h1>
     <div class="task-input-container">
-        <label for="taskinput">Enter the task</label>
-        <input type="text" name="taskinput" id="taskinput" autofocus>
-        <button type="submit" id="add">
+        <input type="text" name="taskinput" title="task input field" id="taskinput" placeholder="Enter the task" autofocus>
+        <button title="Add task" type="submit" id="add">
             <img src="icons/add.png" alt="">
         </button>
     </div>
-    <h3>Task List</h3>
+    <h3 title="Task list">Task List</h3>
     <div>
         <ol id="ol"></ol>
     </div>
     <dialog id="editDialog">
-        <label for="editInput">Edit Task:</label>
-        <input type="text" id="editInput">
-        <button id="confirmEdit">Confirm</button>
-        <button id="cancelEdit">Cancel</button>
+        <input type="text" id="editInput" placeholder="Edit task" title="Edit input field">
+        <button id="confirmEdit" title="Confirm">Confirm</button>
+        <button id="cancelEdit" title="Cancel">Cancel</button>
     </dialog>
     <script src="script.js"></script>
 </body>

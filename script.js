@@ -21,11 +21,14 @@ function createTaskElement(task) {
     const div = document.createElement("div");
     div.classList.add("btns");
     const deletebtn = document.createElement("button");
-    deletebtn.innerHTML = `<img src="icons/delete.png" alt="">`
+    deletebtn.innerHTML = `<img src="icons/delete.png" alt="">`;
+    deletebtn.title = "Delete";
     const editbtn = document.createElement("button");
-    editbtn.innerHTML = `<img src="icons/edit.png" alt="">`
+    editbtn.innerHTML = `<img src="icons/edit.png" alt="">`;
+    editbtn.title = "Edit";
     const markasdonebtn = document.createElement("button");
-    markasdonebtn.innerHTML = `<img src="icons/complete.png" alt="">`
+    markasdonebtn.innerHTML = `<img src="icons/complete.png" alt="">`;
+    markasdonebtn.title = "Mark as done";
 
     litag.appendChild(btag);
     litag.appendChild(div);
